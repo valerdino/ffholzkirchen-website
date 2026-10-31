@@ -1,0 +1,32 @@
+TERMINE AUF DER WEBSITE PFLEGEN
+================================
+
+Die Termine kommen aus der Google-Tabelle der Feuerwehr. Die Website ist
+bereits mit ihr verknüpft (Link steht in der Datei _redirects im Website-Ordner).
+
+Die Erklärung steht direkt in der Tabelle (gelbe Zeile 2 + Blatt "Anleitung").
+
+Kurzfassung
+-----------
+Spalten (Zeile 1, nicht ändern):  Datum | Uhrzeit | Titel | Ort | Info | Flyer
+
+  Datum    PFLICHT   TT.MM.JJJJ, z. B. 13.02.2027
+  Uhrzeit  optional  HH:MM, z. B. 19:33 (ohne "Uhr")
+  Titel    PFLICHT   kurz, z. B. Kappenabend 2027
+  Ort      optional
+  Info     optional  ein kurzer Satz
+  Flyer    optional  Link zu einer Datei in Google Drive
+                     (Teilen -> "Jeder, der über den Link verfügt")
+
+- Das Blatt "Termine" nicht löschen oder ersetzen (die Website ist fest mit genau diesem Blatt verknüpft).
+- Reihenfolge egal, vergangene Termine verschwinden automatisch.
+- Änderungen sind nach ca. 5 Minuten online.
+- Alles in der Tabelle ist öffentlich – keine internen Infos eintragen.
+- Die Tabelle muss "Im Web veröffentlicht" bleiben.
+
+Anleitung in die Google-Tabelle übernehmen
+------------------------------------------
+termine-vorlage.xlsx enthält:
+  Blatt "Termine":   Überschriften + gelbe Erklärzeile (Zeile 2), Termine ab Zeile 3
+  Blatt "Anleitung": ausführliche Schritt-für-Schritt-Erklärung
+Die gelbe Zeile wird von der Website ignoriert.

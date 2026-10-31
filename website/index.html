@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freiwillige Feuerwehr Holzkirchen</title>
+  <meta name="description" content="Freiwillige Feuerwehr Holzkirchen (Unterfranken) – Einsatz, Ausbildung, Veranstaltungen und Mitmachen.">
+  <meta property="og:title" content="Freiwillige Feuerwehr Holzkirchen">
+  <meta property="og:description" content="Ehrenamtlich im Einsatz für Holzkirchen und Wüstenzell – seit 1896. Deine Feuerwehr in Unterfranken.">
+  <meta property="og:image" content="img/fahrzeug-front.jpg">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#start">
+      <img src="img/logo.png" alt="Wappen der Freiwilligen Feuerwehr Holzkirchen" width="40" height="56">
+      <span class="brand-name">FF Holzkirchen</span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#termine">Termine</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#mitmachen">Mitmachen</a>
+      <a href="#galerie">Fotos</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="chronik.html">Chronik</a>
+    </nav>
+  </div>
+</header>
+
+<main id="start">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="img/fahrzeug-geraeteraum.jpg" alt="">
+    <div class="wrap hero-inner">
+      <div class="hero-content">
+        <p class="hero-badge">Seit 1896 · <span class="jahre">130</span> Jahre Ehrenamt</p>
+        <h1>Freiwillige Feuerwehr Holzkirchen</h1>
+        <p class="lead">Ehrenamtlich im Einsatz für unser Dorf in Unterfranken – für Hilfe, Gemeinschaft und Tradition.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#mitmachen">Mitmachen</a>
+          <a class="btn btn-ghost" href="#termine">Termine</a>
+        </div>
+      </div>
+      <img class="hero-logo" src="img/logo.png" alt="Wappen der Freiwilligen Feuerwehr Holzkirchen">
+    </div>
+  </section>
+  <div class="hazard" aria-hidden="true"></div>
+
+  <!-- NOTRUF -->
+  <section class="emergency" aria-labelledby="notruf-titel">
+    <div class="wrap">
+      <div class="emergency-head">
+        <a class="emergency-num" href="tel:112">112</a>
+        <div>
+          <h2 id="notruf-titel">Richtig Notruf absetzen</h2>
+          <p>Feuerwehr und Rettungsdienst erreichst du europaweit kostenlos unter <strong>112</strong>. Ruhig bleiben – die Leitstelle führt dich durch das Gespräch.</p>
+        </div>
+      </div>
+      <ol class="w-fragen">
+        <li><strong>Wo</strong> ist es passiert?<small>Ort, Straße, Hausnummer, Stockwerk – das Wichtigste zuerst</small></li>
+        <li><strong>Was</strong> ist passiert?<small>Brand, Unfall, Unwetter, eingeklemmte Person …</small></li>
+        <li><strong>Wie viele</strong> Betroffene?<small>Anzahl der Verletzten oder gefährdeten Personen</small></li>
+        <li><strong>Welche</strong> Verletzungen oder Gefahren?<small>z.&nbsp;B. Bewusstlosigkeit, Rauch, auslaufende Stoffe</small></li>
+        <li><strong>Warten</strong> auf Rückfragen!<small>Nicht auflegen – die Leitstelle beendet das Gespräch</small></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TERMINE -->
+  <section id="termine" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">Termine &amp; Veranstaltungen</p>
+      <h2>Was bei uns los ist</h2>
+
+      <!--
+        TERMINE: kommen aus der Google-Tabelle. Netlify holt sie über die Datei _redirects ab,
+        damit Besucher keine Verbindung zu Google aufbauen. Der Tabellen-Link steht in _redirects.
+      -->
+      <div id="termine-liste" class="termine" data-src="/termine.csv">
+        <p class="muted">Termine werden geladen …</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section id="ueber-uns" class="section">
+    <div class="wrap two-col">
+      <div>
+        <p class="eyebrow">Über uns</p>
+        <h2>Feuerwehr aus dem Ort, für den Ort</h2>
+        <p>Seit 1896 helfen wir Menschen in Not – rund um die Uhr und ehrenamtlich. 2026 feierten wir unser 130-jähriges Bestehen gemeinsam mit dem FC Holzkirchen.</p>
+        <p>Heute prägen vor allem technische Hilfeleistungen unseren Einsatzalltag. Dafür üben wir regelmäßig in zwei Gruppen und gemeinsam mit den Feuerwehren aus Remlingen und Uettingen.</p>
+        <p>Feuerwehr heißt aber auch Gemeinschaft: Kappenabend, Bayerischer Abend und Christbaumfeier gehören bei uns fest dazu.</p>
+        <blockquote class="motto">„Gott, hilf uns Mensch und Heimat schützen“<small>Leitspruch auf unserer Fahne von 1971</small></blockquote>
+        <a class="btn btn-outline" href="chronik.html">Unsere Chronik seit 1896</a>
+      </div>
+      <img class="about-img" src="img/team-gruppe2-mlf.jpg" alt="Einsatzkräfte der FF Holzkirchen vor dem MLF" loading="lazy">
+    </div>
+    <div class="wrap">
+      <ul class="stats">
+        <li><strong>1896</strong><span>gegründet</span></li>
+        <li><strong>rund 30</strong><span>Aktive in zwei Gruppen</span></li>
+        <li><strong>Jugendwehr</strong><span>für Jugendliche ab 12</span></li>
+        <li><strong>Kinderfeuerwehr</strong><span>in Planung</span></li>
+      </ul>
+    </div>
+    <div class="wrap team-block">
+      <h3>Unsere Vorstandschaft</h3>
+      <div class="team-grid">
+        <ul class="leaders">
+          <li><span>1. Kommandant</span><strong>Sebastian Huppmann</strong></li>
+          <li><span>2. Kommandant</span><strong>Markus Folly</strong></li>
+          <li><span>1. Vorstand</span><strong>Daniel Bachmann</strong></li>
+          <li><span>2. Vorstand</span><strong>Klaus Neumann</strong></li>
+          <li><span>Jugendwart</span><strong>Patrick Pilsner</strong></li>
+        </ul>
+        <figure class="team-photo">
+          <img src="img/team-vorstandschaft-2026.jpg" alt="Die Vorstandschaft der FF Holzkirchen 2026" loading="lazy">
+          <figcaption>Die Vorstandschaft 2026</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAHRZEUG -->
+  <section id="fahrzeug" class="section">
+    <div class="wrap two-col reverse">
+      <div class="photo-stack">
+        <img src="img/fahrzeug-geraeteraum.jpg" alt="Einsatzkraft am geöffneten Geräteraum des Fahrzeugs" loading="lazy">
+        <img src="img/fahrzeug-heck.jpg" alt="Heck des Feuerwehrfahrzeugs mit Pumpe" loading="lazy">
+      </div>
+      <div>
+        <p class="eyebrow">Fahrzeuge &amp; Technik</p>
+        <h2>Unsere Fahrzeuge</h2>
+        <p><strong>MLF 600 – Florian Holzkirchen 47/1.</strong> Unser Mittleres Löschfahrzeug von Ziegler ist seit 2018 im Dienst und hat das LF 8 von 1983 abgelöst. An Bord: Löschwasser, Pumpe, Schläuche, Atemschutz und Werkzeug für die technische Hilfe.</p>
+        <p><strong>MTW – Florian Holzkirchen 14/1.</strong> Unser Mannschaftstransportwagen, ein Ford Transit, bringt weitere Einsatzkräfte und Material zur Einsatzstelle – und ist auch bei Übungen, Lehrgängen und mit der Jugendwehr unterwegs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MITMACHEN -->
+  <section id="mitmachen" class="section cta">
+    <img class="cta-bg" src="img/umkleide.jpg" alt="">
+    <div class="wrap cta-inner">
+      <p class="eyebrow">Mitmachen</p>
+      <h2>Nutze die Chance.</h2>
+      <p class="lead">Dein Haken an der Wand wartet schon. Wir suchen Menschen aus Holzkirchen, die anpacken wollen – Vorkenntnisse brauchst du keine.</p>
+      <ul class="checks">
+        <li>Ausbildung von Grund auf – wir bringen dir alles bei</li>
+        <li>Komplette Schutzausrüstung wird gestellt</li>
+        <li>Starke Kameradschaft und Feste im Ort</li>
+        <li>Für Frauen und Männer, ab 12 Jahren in der Jugendwehr</li>
+        <li>Eine Kinderfeuerwehr ist in Planung</li>
+      </ul>
+      <p>Sprich einfach einen unserer Kommandanten oder Vorstände an – oder schreib uns.</p>
+      <a class="btn btn-primary" href="#kontakt">Jetzt melden</a>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Fotos</p>
+      <h2>Einblicke</h2>
+      <div class="gallery">
+        <button data-full="img/112-detail.jpg"><img src="img/112-detail.jpg" alt="112-Schriftzug auf dem Fahrzeug" loading="lazy"></button>
+        <button data-full="img/kabine.jpg"><img src="img/kabine.jpg" alt="Einsatzkraft mit Atemschutz in der Fahrzeugkabine" loading="lazy"></button>
+        <button data-full="img/112-helm.jpg"><img src="img/112-helm.jpg" alt="Feuerwehrmann mit Helm vor dem 112-Schriftzug" loading="lazy"></button>
+        <button data-full="img/geraeteraum-2.jpg"><img src="img/geraeteraum-2.jpg" alt="Einsatzkraft am Geräteraum" loading="lazy"></button>
+        <button data-full="img/fahrzeug-front.jpg"><img src="img/fahrzeug-front.jpg" alt="Einsatzkraft vor dem Fahrzeug" loading="lazy"></button>
+        <button data-full="img/umkleide.jpg"><img src="img/umkleide.jpg" alt="Einsatzkleidung hängt bereit" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANFAHRT -->
+  <section id="anfahrt" class="section">
+    <div class="wrap two-col">
+      <div>
+        <p class="eyebrow">Anfahrt</p>
+        <h2>So findest du uns</h2>
+        <p>Das Feuerwehrhaus liegt etwas außerhalb von Holzkirchen an der Nibelungenstraße in Richtung Wüstenzell. Bitte die Ausfahrt der Fahrzeughalle immer freihalten.</p>
+        <div class="address-line">
+          <address><strong>Feuerwehrhaus Holzkirchen</strong><br>Nibelungenstraße<br>97292 Holzkirchen</address>
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.7799663,9.673494" target="_blank" rel="noopener">Route planen</a>
+        </div>
+      </div>
+      <div class="map-embed" id="map">
+        <div class="map-consent">
+          <span class="map-pin" aria-hidden="true">📍</span>
+          <button type="button" class="btn btn-primary" id="map-load">Karte anzeigen</button>
+          <small>Mit Klick wird Google Maps geladen. Dabei werden Daten (z.&nbsp;B. deine IP-Adresse) an Google übertragen. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="section section-alt">
+    <div class="wrap two-col">
+      <div>
+        <p class="eyebrow">Kontakt</p>
+        <h2>Sprich uns an</h2>
+        <p>Fragen, Interesse am Mitmachen oder Hilfe bei einer Veranstaltung? Schreib uns einfach.</p>
+      </div>
+      <div class="links">
+        <a class="link-card" href="https://www.instagram.com/ffholzkirchen" target="_blank" rel="noopener">
+          <span class="link-icon" aria-hidden="true">📷</span><span><strong>Instagram</strong><small>@ffholzkirchen<br>Einsätze, Übungen &amp; Bilder</small></span>
+        </a>
+        <a class="link-card" href="mailto:info@ff-holzkirchen-ufr.de">
+          <span class="link-icon" aria-hidden="true">✉️</span><span><strong>E-Mail</strong><small>info@ff-holzkirchen-ufr.de</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="brand">
+      <img src="img/logo.png" alt="" width="40" height="56">
+      <span><strong>Freiwillige Feuerwehr</strong><br>Holzkirchen</span>
+    </div>
+    <nav>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+    <p>© <span id="year">2026</span> Freiwillige Feuerwehr Holzkirchen</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="Bildansicht">
+  <form method="dialog"><button class="lightbox-close" aria-label="Schließen">×</button></form>
+  <img alt="">
+</dialog>
+
+<script>
+  const btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); btn.setAttribute('aria-expanded', false);
+  }));
+
+  const box = document.querySelector('.lightbox'), boxImg = box.querySelector('img');
+  document.querySelectorAll('.gallery button').forEach(b => b.addEventListener('click', () => {
+    boxImg.src = b.dataset.full; boxImg.alt = b.querySelector('img').alt; box.showModal();
+  }));
+  box.addEventListener('click', e => { if (e.target === box) box.close(); });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // Jahre seit Gründung 1896 – aktualisiert sich jedes Jahr von selbst
+  document.querySelectorAll('.jahre').forEach(el => el.textContent = new Date().getFullYear() - 1896);
+
+  // Google Maps erst nach Klick laden (Datenschutz)
+  document.getElementById('map-load').addEventListener('click', () => {
+    document.getElementById('map').innerHTML = '<iframe title="Karte: Feuerwehrhaus Holzkirchen" src="https://maps.google.com/maps?q=49.7799663,9.673494&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>';
+  });
+
+  // Termine aus Google-Tabelle (CSV) laden
+  (async () => {
+    const box = document.getElementById('termine-liste');
+    const src = box.dataset.src;
+    const leer = '<p class="termine-leer">Aktuell stehen keine Termine fest. Neuigkeiten gibt\'s auf <a href="https://www.instagram.com/ffholzkirchen" target="_blank" rel="noopener">Instagram</a>.</p>';
+    const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const parseCSV = text => {
+      const rows = []; let row = [], f = '', q = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (q) { if (c === '"' && text[i+1] === '"') { f += '"'; i++; } else if (c === '"') q = false; else f += c; }
+        else if (c === '"') q = true;
+        else if (c === ',' || c === ';') { row.push(f); f = ''; }
+        else if (c === '\n') { row.push(f); rows.push(row); row = []; f = ''; }
+        else if (c !== '\r') f += c;
+      }
+      if (f || row.length) { row.push(f); rows.push(row); }
+      return rows;
+    };
+    const parseDate = s => {
+      let m = s.trim().match(/^(\d{1,2})\.(\d{1,2})\.(\d{2,4})$/);
+      if (m) return new Date(+(m[3].length === 2 ? '20' + m[3] : m[3]), m[2] - 1, +m[1]);
+      m = s.trim().match(/^(\d{4})-(\d{2})-(\d{2})/);
+      return m ? new Date(+m[1], m[2] - 1, +m[3]) : null;
+    };
+    if (!src) { box.innerHTML = leer; return; }
+    try {
+      const res = await fetch(src, { cache: 'no-store' });
+      if (!res.ok) throw new Error(res.status);
+      const [, ...rows] = parseCSV(await res.text());
+      const heute = new Date(); heute.setHours(0, 0, 0, 0);
+      const termine = rows
+        .map(([datum = '', uhrzeit = '', titel = '', ort = '', info = '', flyer = '']) => ({ d: parseDate(datum), uhrzeit: uhrzeit.trim().replace(/\s*uhr$/i, '').replace(/^(\d{1,2}:\d{2}):\d{2}$/, '$1'), titel: titel.trim(), ort: ort.trim(), info: info.trim(), flyer: /^https?:\/\//.test(flyer.trim()) ? flyer.trim() : '' }))
+        .filter(t => t.d && t.titel && t.d >= heute)
+        .sort((a, b) => a.d - b.d);
+      if (!termine.length) { box.innerHTML = leer; return; }
+      const tag = d => d.toLocaleDateString('de-DE', { weekday: 'short' }).replace('.', '').toUpperCase() + '.';
+      const mon = d => d.toLocaleDateString('de-DE', { month: 'short' }).replace('.', '').toUpperCase();
+      const lang = d => d.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      const [n, ...rest] = termine;
+      let html = `<article class="next-event">
+        <div class="date-block"><span>${tag(n.d)}</span><strong>${n.d.getDate()}</strong><span>${mon(n.d)}</span></div>
+        <div>
+          <span class="badge badge-next">Nächster Termin</span>
+          <h3>${esc(n.titel)}</h3>
+          <p class="next-meta">${lang(n.d)}${n.uhrzeit ? ' · ' + esc(n.uhrzeit) + ' Uhr' : ''}${n.ort ? '<br>' + esc(n.ort) : ''}</p>
+          ${n.info ? `<p>${esc(n.info)}</p>` : ''}
+          ${n.flyer ? `<a class="btn btn-primary" href="${esc(n.flyer)}" target="_blank" rel="noopener">Flyer ansehen</a>` : ''}
+        </div>
+      </article>`;
+      if (rest.length) html += '<ul class="termin-liste">' + rest.map(t => `<li>
+          <span class="tl-date">${t.d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
+          <span><strong>${esc(t.titel)}</strong><small>${[t.uhrzeit && t.uhrzeit + ' Uhr', t.ort, t.info].filter(Boolean).map(esc).join(' · ')}</small></span>
+          ${t.flyer ? `<a class="tl-flyer" href="${esc(t.flyer)}" target="_blank" rel="noopener">Flyer</a>` : ''}
+        </li>`).join('') + '</ul>';
+      box.innerHTML = html;
+    } catch (e) {
+      box.innerHTML = leer;
+    }
+  })();
+</script>
+</body>
+</html>

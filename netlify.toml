@@ -1,0 +1,3 @@
+# Netlify veröffentlicht nur den Ordner "website"
+[build]
+  publish = "website"

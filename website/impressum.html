@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum – Freiwillige Feuerwehr Holzkirchen</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html">
+      <img src="img/logo.png" alt="Wappen der Freiwilligen Feuerwehr Holzkirchen" width="40" height="56">
+      <span class="brand-name">FF Holzkirchen</span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="index.html#termine">Termine</a>
+      <a href="index.html#ueber-uns">Über uns</a>
+      <a href="index.html#mitmachen">Mitmachen</a>
+      <a href="index.html#galerie">Fotos</a>
+      <a href="index.html#kontakt">Kontakt</a>
+      <a href="chronik.html">Chronik</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap legal">
+  <h1>Impressum</h1>
+  <h2>Angaben gemäß § 5 DDG</h2>
+  <p>Freiwillige Feuerwehr Holzkirchen e.&nbsp;V.<br>Nibelungenstraße<br>97292 Holzkirchen</p>
+  <h2>Vertreten durch</h2>
+  <p>1. Vorstand: Daniel Bachmann<br>2. Vorstand: Klaus Neumann</p>
+  <h2>Kontakt</h2>
+  <p>E-Mail: <a href="mailto:info@ff-holzkirchen-ufr.de">info@ff-holzkirchen-ufr.de</a><br>Telefon/WhatsApp: <a href="tel:+491601540148">0160 1540148</a></p>
+  <h2>Registereintrag</h2>
+  <p>Eingetragen im Vereinsregister des Amtsgerichts Würzburg<br>Registernummer: VR 200868</p>
+  <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+  <p>Valentin Amon<br>c/o Freiwillige Feuerwehr Holzkirchen e.&nbsp;V.<br>Nibelungenstraße<br>97292 Holzkirchen</p>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="brand">
+      <img src="img/logo.png" alt="" width="40" height="56">
+      <span><strong>Freiwillige Feuerwehr</strong><br>Holzkirchen</span>
+    </div>
+    <nav>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+    <p>© <span id="year">2026</span> Freiwillige Feuerwehr Holzkirchen</p>
+  </div>
+</footer>
+<script>
+  const btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
