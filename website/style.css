@@ -289,3 +289,8 @@ body { overflow-x: clip; }
 /* Adresse bei Anfahrt */
 .address-line { margin: 20px 0 4px; padding: 14px 18px; background: var(--bg-alt); border-left: 4px solid var(--red); border-radius: 10px; line-height: 1.5; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .address-line address { background: none; border: 0; padding: 0; border-radius: 0; }
+
+/* Chronik: Bilder mit Unterschrift */
+.timeline figure { margin: 12px 0 0; width: min(360px, 100%); }
+.timeline figure img { margin-top: 0; width: 100%; }
+.timeline figcaption { font-size: .82rem; color: var(--muted); margin-top: 6px; line-height: 1.4; }
